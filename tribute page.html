@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <title>
+            Lionel Messi
+        </title>
+        <style>
+            body{
+                margin:0px;
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 5% repeat(4,1fr) 5%;
+                margin: 0px;
+                background: linear-gradient(45deg, rgb(39, 119, 79), rgba(2, 85, 27, 0.938));
+                grid-template-rows: 0.5fr repeat(23,1fr);
+                height: 200vh;
+                width: 100%;
+            }
+            .h1{
+                grid-column: 1/8;
+                grid-row: 1/2;
+                background-color: rgb(35, 80, 58);
+                text-align: center; 
+                display:grid;
+                margin-block-end: 0px;
+                margin-block-start: 0px;
+                margin: 0px;
+                padding: 2%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                box-sizing: border-box;
+            }  
+            .tribute-img{
+                grid-area: 2/3/7/5;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            .tribute-info{
+                grid-column: 2/6;
+                grid-row: 8/12;
+                height: fit-content;
+                background-color: rgb(109, 172, 109);
+                margin: 5vh 0vw 0vh 0vw;
+                box-sizing: border-box;
+                box-shadow: 2px 2px 20px 2px rgb(35, 59, 37);
+            }              
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <div class="grid">
+                <h1 class="h1" id="title">Lionel Messi</h1>
+                <div class="tribute-img" id="img-div">
+                <img src="https://dailypost.ng/wp-content/uploads/2019/06/lionel-messi-argentina-2018_10ikp4uiun4ln1ut40cjiqx2rk.jpg" id="image">
+                <figcaption id="img-caption">lionel messi</figcaption> 
+                </div>
+                <div class="tribute-info" id="tribute-info">
+                    <div>
+                        <ul>
+                            <li>
+                                Name:-Lionel Messi. Professional footballer.
+                            </li>
+                            <li>
+                                Born on:- 24 July 1987(age 32)
+                            </li>
+                            <li>
+                                Native country:- Argentine
+                            </li>
+                            <li>
+                                Spouse:- Antonella Roccuzzo
+                            </li>
+                            <li>
+                                Children:- 3(Thiago, Mateo, Ciro)
+                            </li>
+                            <li>
+                                CLub:- Barcelona(2004- )
+                            </li>
+                            <li>
+                                States:-
+                                <li>Club:- Appearance: 452, Goals: 419</li>
+                                <li>International:- Appearance: 136, Goals: 68</li>
+                            </li>
+                            <li>
+                                Net Worth:- $400 million(estimated as of 2018)
+                            </li>
+                            <li>
+                                Achievments:- One of the best player of all time
+                            </li>
+                            <li>
+                                For more information <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank" id="tribute-link">Click here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+
+
+
+
+
+

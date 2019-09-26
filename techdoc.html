@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Technical Documentation</title>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                box-sizing: border-box;
+                margin: 0px;
+                overflow-x: hidden;
+            }        
+            #main-doc{
+                margin: 0px;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: 20vw 80vw;
+                grid-template-rows: 1fr;
+                height: 100%;
+            }
+            #navbar{
+                background: orange;
+                grid-area: 1/1/2/2;
+            }
+            #mai{
+                grid-area: 1/2/2/3;
+                background: rgb(236, 236, 158);
+            }
+            .main-section{
+                margin: 5px 5px 5px 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                content: fit-window;
+            }
+            #navbar{
+                display: grid;
+                grid-template-rows: repeat(12, 1fr);                
+            }
+            .nav-link{
+                margin: 2px 0px 2px 0px;
+                text-decoration: none;
+                color: black;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 0px 0px 0px 5px;
+                
+            }
+            #navbar header{
+                font-size: 25px;
+                font-weight: bold;
+                padding: 5%;
+            }
+            @media screen and (max-width: 500px){
+                #navbar{
+                    font-size: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main-doc">
+            <nav id="navbar">
+                <header>
+                    <h2>
+                    Basics Of HTML</h2>
+                </header>
+                <a href="#Web_Development" class="nav-link">Web Development</a>
+                <a href="#HTML" class="nav-link">HTML</a>
+                <a href="#CSS" class="nav-link">CSS</a>
+                <a href="#JAVASCRIPT" class="nav-link">JAVASCRIPT</a>
+                <a href="#Others" class="nav-link">Others</a>
+            </nav>
+            <div id="mai">
+            <section class="main-section" id="Web_Development">
+            <header>Web Development</header>
+                <p>Every Web Developer must have a basic understanding of HTML, CSS, and JavaScript.                
+                Responsive Web Design is used in all types of modern web development.                
+                ECMAScript 5 (JavaScript 5) is supported in all modern browsers. Take a good look at it, especially the new array
+                functions.</p>
+                <p>We will be learning about the few things in this section</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+            </section>
+            <section class="main-section" id="HTML">
+                <header>HTML</header>
+                <p>HTML stands for Hyper Text Markup Language.HTML is the standard markup language for Web pages.HTML elements are the building blocks of HTML pages.HTML elements are represented by <> tags.</p>
+                <p>HTML elements are the building blocks of HTML pages.</p>
+                <ul>
+                    <li>The
+                    <strong><code>&lt;!DOCTYPE html&gt;</code></strong> declaration defines this document to be HTML5</li>
+                    <li>The <strong><code>&lt;html&gt;</code></strong> element is the root element of an HTML page</li>
+                    <li>The <strong>lang </strong>attribute defines the language of the document</li>
+                    <li>The
+                    <strong><code>&lt;meta&gt;</code></strong> element contains meta information about the document</li>
+                    <li>The <strong>charset</strong> attribure defines the character set used in the document</li>
+                    <li>The <strong><code>&lt;title&gt;</code></strong> element specifies a title for the document</li>
+                    <li>The
+                    
+                    <strong><code>&lt;body&gt;<code> </strong>element contains the visible page content</li>
+                    <li>The <strong><code>&lt;h1&gt;</code></strong> element defines a large heading</li>
+                    <li>The <strong><code>&lt;p&gt;</code></strong> element defines a paragraph</li>
+                </ul>
+            </section>
+            <section class="main-section" id="CSS">
+                <header>CSS</header>
+                <p>CSS stands for Cascading Style Sheets.CSS describes how HTML elements are to be displayed.The selector points to the HTML element to style.
+                The declaration block contains one or more declarations separated by semicolons.
+                Each declaration includes a CSS property name and a value, separated by a colon.
+                <p>If different styles are specified for HTML elements, the styles will cascade into new styles with the following
+                priority:</p>
+                <ul>
+                    <li>Priority 1: Inline styles</li>
+                    <li>Priority 2: External and internal style sheets</li>
+                    <li>Priority 3: Browser default</li>                
+                </ul>
+                <p>If different styles are defined on the same priority level, the last one has the highest priority.</p>
+            </section>
+            <section class="main-section" id="JAVASCRIPT">
+                <header>JAVASCRIPT</header>
+                <p>JavaScript is the Programming Language for the Web.                
+                JavaScript can update and change both HTML and CSS.                
+                JavaScript can calculate, manipulate and validate data.
+                </p>
+                <p>The most important JavaScript variables are:</p>
+                <ul>
+                    <li>Numbers</li>
+                    <li>Strings</li>
+                    <li>Objects</li>
+                    <li>Arrays</li>
+                    <li>Functions</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Others">
+                <header>Others</header>
+                <p>There are  lot of other things present in the world of Web-Devlopment that one should know about.</p>
+                <p>Some of them are:</p>
+                <ul>
+                    <li>SQL</li>
+                    <li>XML</li>
+                    <li>JSON</li>
+                    <li>BOOTSTRAP</li>
+                    <li>jQuery</li>
+                </ul>
+            </section>
+            </div>
+        </main>
+    </body>
+</html>
+

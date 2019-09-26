@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1"> 
+        <title>
+            Survey form
+        </title>
+        <style>
+            body{
+                margin: 0px;
+                text-align: center;
+                background-color: rgb(128, 244, 248);
+            }
+            #title{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+            }
+            #description{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #survey-form{
+                margin: 0px auto;
+                width: 80vw;
+                padding: 1em;
+                border: 2px solid rgb(81,193,207);
+                background-color: rgb(81, 193, 207);
+                box-shadow: 2px 2px 2px 2px black;
+            }
+            #name-label{
+                display: inline-block;
+                width: 15vw;
+                text-align: right;
+                margin-bottom: 0.1em;
+            }
+            #email-label{
+                display: inline-block;
+                width: 15vw;
+                text-align: right;
+                margin-bottom: 0.1em;
+            }
+            #number-label{
+                display: inline-block;
+                width: 15vw;
+                text-align: right;
+                margin-bottom: 0.1em;
+            }
+            #dob{
+                display: inline-block;
+                width: 15vw;
+                text-align: right;
+                margin-bottom: 0.1em;
+            }
+            #name{
+                vertical-align: top;
+                width: 20em;
+                box-sizing: border-box;
+                border: 0.25em solid grey;
+                border-radius: 0em 1em 1em 0em;
+                margin-bottom: 0.1em;                
+            }
+            #email{
+                vertical-align: top;
+                width: 20em;
+                box-sizing: border-box;
+                border: 0.25em solid grey;
+                border-radius: 0em 1em 1em 0em;
+                margin-bottom: 0.1em;                
+            }
+            #number{
+                vertical-align: top;
+                width: 20em;
+                box-sizing: border-box;
+                border: 0.25em solid grey;
+                border-radius: 0em 1em 1em 0em;
+                margin-bottom: 0.1em;                
+            }
+            #dropdown{
+                vertical-align: top;
+                width: 20em;
+                box-sizing: border-box;
+                border: 0.25em solid grey;
+                border-radius: 0em 1em 1em 0em;
+                margin-bottom: 0.1em;                
+            }
+            .shift1{
+                display: inline-block;
+                width: 20vw;
+                text-align: right; 
+                vertical-align: top;
+            }
+            .shift2{
+                display: inline-block;
+                width: 20vw;
+                text-align: right; 
+                vertical-align: top;
+            }
+            .shift3{
+                display: inline-block;
+                width: 20vw;
+                text-align: right; 
+                vertical-align: top;
+            }
+            .s4{
+                display: inline-block;
+                width: 30vw;
+                text-align: center; 
+                vertical-align: top;
+            }
+            .z{
+                display: inline-block;
+                vertical-align: top;
+                width: 20em;
+                box-sizing: border-box;
+                text-align: left;
+            }
+            .alg{
+        
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="grid">
+            <h1 id="title">FOOTBALL</h1>
+            <p id="description">
+                Let us know about your love for football
+            </p>
+            <form id="survey-form">
+                <div>
+                    <label id="name-label">Name:-</label>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>        
+                </div>
+                <div>                  
+                    <label id="email-label">Email:-</label>
+                    <input type="email" id="email" placeholder="Enter your email" required><br>
+                </div>
+                <div>
+                    <label id="number-label">Contact Number:-</label>
+                    <input type="number" maxlength="10" min="0" max="9" size="10" dropzone="hidden" id="number" placeholder="Enter your contact number" required><br>
+                </div>
+                <div>
+                    <label id="dob">Your age group:-</label>
+                    <select id="dropdown">
+                        <option>18-30</option>
+                        <option>30-50</option>
+                        <option>50</option><br>
+                    </select>
+                </div>
+                <div >
+                <div class="shift1">
+                    Select your level as a player:-  
+                </div>
+                <div class="z">
+                <div>
+                    <input type="radio" name="top" value="1">Star
+                </div><br>
+                <div>
+                    <input type="radio" name="top" value="2">Professional
+                </div><br>
+                <div>
+                    <input type="radio" name="top" value="3">Amature
+                </div><br>
+                </div>
+                </div>
+                <div>
+                <div class="shift2">
+                    Select your favourite game:- 
+                </div>
+                <div class="z">
+                <div>
+                    <input type="radio" name="bot" value="4">FIFA
+                </div><br>
+                <div>
+                    <input type="radio" name="bot" value="5">PES
+                </div><br>
+                <div>
+                    <input type="radio" name="bot" value="6">Others
+                </div><br>  
+                </div>
+                </div>
+                <div>
+                <div class="shift3">
+                    Select your favourite play position:-
+                </div>
+                <div class="z">
+                <div>
+                    <input type="checkbox" name="cot1" value="let">Forward
+                </div><br>
+                <div>
+                    <input type="checkbox" name="cot2" value="it">Midfielder
+                </div><br>
+                <div>
+                    <input type="checkbox" name="cot3" value="be">Defence
+                </div><br> 
+                <div>
+                    <input type="checkbox" name="cot4" value="like">Goalkeeper
+                </div><br>
+                </div>
+                </div>
+                <div class="s4">
+                    Any special comments you would like to add
+                <textarea placeholder="Any comments..."></textarea><br>
+                <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+            </div>
+        </main>
+    </body>
+    </html>
